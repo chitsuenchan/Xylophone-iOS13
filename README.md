@@ -45,7 +45,7 @@ Project is completed.
 
 ### Play different sounds of a Xylophone
 
-<img src="ExampleScreenshots/playF.jpg" height="500"><img src="ExampleScreenshots/playyG.jpg" height="500">
+<img src="ExampleScreenshots/playF.jpg" height="500"><img src="ExampleScreenshots/playG.jpg" height="500">
 
 * User can touch each Xylophone letter displayed and it will play the sound of that note
 * The package used is the AVFoundation
