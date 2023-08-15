@@ -1,59 +1,58 @@
-![App Brewery Banner](Documentation/AppBreweryBanner.png)
+# Weather App
+<img src="ExampleScreenshots/xylophone.jpg" height="500">
 
-# Xylophone
+**Table of Contents**
+- [Introduction](#introduction)
+- [Motivation](#motivation)
+- [Technology Used](#technologyUsed)
+- [Build Status](#buildStatus)
+- [Features](#features)
+- [Installation](#installation)
+- [Execution](#execution)
 
-## Our Goal
+## Introduction <a name="introduction"></a>
+Mobile app where users can play the Xylophone.
 
-The goal of this tutorial is to dive into a simple iOS recipe - how to play sound and use an Apple library called AVFoundation. The most important skill of a great programmer is being able to solve your own problems. We’ll do that by exploring StackOverflow, Apple Documentation and learning how to search for solutions effectively. By learning to use these tools, you’ll be able to start adding custom features to an app and get it to do what you want it to.
+## Motivation <a name="motivation"></a>
+This is a personal learning project aimed to teach me how to play sound using an Apple library called AVFoundation.
 
+## Technology Used <a name="technologyUsed"></a>
+<table>
+  <tbody>
+    <tr>
+      <td>Language</td>
+      <td>Swift</td>
+    </tr>
+    <tr>
+      <td>Notable Technology Utilized</td>
+      <td>
+        <ul>
+          <li>Swift Language + Storyboard</li>
+          <li>Layout and constraint designing</li>
+          <li>AVFoundation package to play sounds</li>
+          <li>Error handling</li>
+        </ul>
+      </td>
+    </tr>
+  </tbody>
+</table>
 
-## What you will create
+## Build Status <a name="buildStatus"></a>
+Project is completed.
 
-You will be making your first musical instrument! Music apps are so popular on the App Store that they even get their own category. So in this module, we’re going to make a colourful XyloPhone app. Get it? Ok, the jokes are bad, but remember, I only wrote the good ones... 
+## Features <a name="features"></a>
+- Play different sounds of a Xylophone
 
-## What you will learn
+### Play different sounds of a Xylophone
 
-* How to play sound using AVFoundation and AVAudioPlayer.
-* Understand Apple documentation and how to use StackOverflow.
-* Functions and methods in Swift. 
-* Data types.
-* Swift loops.
-* Variable scope.
-* The ViewController lifecycle.
-* Error handling in Swift.
-* Code refactoring.
-* Basic debugging.
+<img src="ExampleScreenshots/playF.jpg" height="500"><img src="ExampleScreenshots/playyG.jpg" height="500">
 
-## Replacement Code
+* User can touch each Xylophone letter displayed and it will play the sound of that note
+* The package used is the AVFoundation
 
-```
-import UIKit
-import AVFoundation
+# Installation <a name="installation"></a>
+* Ensure XCode is installed (only available on MacOS)
 
-class ViewController: UIViewController {
-    
-    var player: AVAudioPlayer!
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    }
-
-    @IBAction func keyPressed(_ sender: UIButton) {
-        playSound()
-    }
-    
-    func playSound() {
-        let url = Bundle.main.url(forResource: "C", withExtension: "wav")
-        player = try! AVAudioPlayer(contentsOf: url!)
-        player.play()
-                
-    }
-}
-```
-
-
-
->This is a companion project to The App Brewery's Complete App Development Bootcamp, check out the full course at [www.appbrewery.co](https://www.appbrewery.co/)
-
-![End Banner](Documentation/readme-end-banner.png)
-
+# Execution <a name="execution"></a>
+* Open the "Xylophone.xcodeproj" file in XCode
+* Once the project is open you can click the play button at the top of the IDE to run the iPhone simulator or use a physical device
