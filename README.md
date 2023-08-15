@@ -27,7 +27,7 @@ This is a personal learning project aimed to teach me how to play sound using an
       <td>Notable Technology Utilized</td>
       <td>
         <ul>
-          <li>Swift Language + Storyboard</li>
+          <li>Storyboard</li>
           <li>Layout and constraint designing</li>
           <li>AVFoundation package to play sounds</li>
           <li>Error handling</li>
